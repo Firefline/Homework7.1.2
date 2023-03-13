@@ -178,6 +178,11 @@ int main(int argc, char** argv)
     elapsed_seconds_4 = end_4 - start_4;
     std::cout << "4 потока \t" << elapsed_seconds_1.count() << "s\t" << elapsed_seconds_2.count() << "s\t" << elapsed_seconds_3.count() << "s\t" << elapsed_seconds_4.count() << "s" << std::endl;
     
+    vsumm_1.cleaning();
+    vsumm_2.cleaning();
+    vsumm_3.cleaning();
+    vsumm_4.cleaning();
+
     //8 ПОТОКОВ----------------------------------------------------------------
     
     start_1 = std::chrono::steady_clock::now();
@@ -262,6 +267,11 @@ int main(int argc, char** argv)
     elapsed_seconds_4 = end_4 - start_4;
     std::cout << "8 потоков\t" << elapsed_seconds_1.count() << "s\t" << elapsed_seconds_2.count() << "s\t" << elapsed_seconds_3.count() << "s\t" << elapsed_seconds_4.count() << "s" << std::endl;
     
+    vsumm_1.cleaning();
+    vsumm_2.cleaning();
+    vsumm_3.cleaning();
+    vsumm_4.cleaning();
+
     //16 ПОТОКОВ----------------------------------------------------------------
 
     start_1 = std::chrono::steady_clock::now();
@@ -410,5 +420,10 @@ int main(int argc, char** argv)
     elapsed_seconds_4 = end_4 - start_4;
     std::cout << "16 потоков\t" << elapsed_seconds_1.count() << "s\t" << elapsed_seconds_2.count() << "s\t" << elapsed_seconds_3.count() << "s\t" << elapsed_seconds_4.count() << "s" << std::endl;
     
+    vsumm_1.cleaning();
+    vsumm_2.cleaning();
+    vsumm_3.cleaning();
+    vsumm_4.cleaning();
+
     return 0;
 }
